@@ -1,0 +1,285 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy CV/Resume
+% XeLaTeX Template
+% Version 1.0 (5/5/2014)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Debarghya Das (http://www.debarghyadas.com)
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+\usepackage{graphicx,calc}
+\newlength\myheight
+\newlength\mywidth
+\newlength\mydepth
+\settototalheight\myheight{Xygp}
+\settodepth\mydepth{Xygp}
+\setlength\fboxsep{0pt}
+\newcommand*\inlinegraphics[1]{%
+  \settototalheight\myheight{Xygp}%
+  \settodepth\mydepth{Xygp}%
+  \raisebox{-\mydepth}{\includegraphics[height=25pt]{#1}}%
+}
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\lastupdated % Print the Last Updated text at the top right
+
+\namesection{Adam}{Fowles}{ % Your name
+%\urlstyle{same}\url{http://adamfowlesprojects.com} \\ % Your website, LinkedIn profile or other web address
+\href{mailto:adamfowles22@gmail.com}{adamfowles22@gmail.com} | 860.416.7468 % Your contact information
+}
+
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%------------------------------------------------
+% Education
+%------------------------------------------------
+
+\section{Education} 
+
+\subsection[School]{Rochester Institute \\ of Technology}
+
+\descript{MS in Computer Science}
+\location{May 2017 | Rochester, NY}
+
+\sectionspace % Some whitespace after the section
+
+\descript{BS in Computer Science}
+\location{May 2017 | Rochester, NY}
+\sectionspace % Some whitespace after the section
+Minor in Communication \\
+%\location{GPA: 3.7 / 4.0}
+
+\sectionspace % Some whitespace after the section
+%----------------------------------------------------------------------------------------
+%------------------------------------------------
+% Coursework
+%------------------------------------------------
+
+\section{Coursework}
+
+\subsection{Graduate}
+Big Data\\
+Data Security and Privacy \\
+Pervasive and Mobile Systems\\
+Computer Networks\\
+Cryptography\\
+Parallel and Distributed Systems
+%------------------------------------------------
+
+%------------------------------------------------
+% Links
+%------------------------------------------------
+
+\section{Links} 
+
+Github:// \href{https://github.com/acf5118}{\bf acf5118} \\
+LinkedIn:// \href{https://www.linkedin.com/in/adamfowles}{\bf adamfowles} \\
+
+\sectionspace % Some whitespace after the section
+%------------------------------------------------
+% Skills
+%------------------------------------------------
+
+\section{Skills}
+
+\subsection{Programming}
+\location{Extremely comfortable:}
+C++ \\
+\location{Comfortable:}
+Java \textbullet{} C\# \textbullet{} Python\\
+\location{Familiar:}
+Go
+\smallskip
+\subsection{Agile}
+JIRA \textbullet{} Confluence
+\smallskip
+\subsection{Business}
+\LaTeX\ \textbullet{} Word \textbullet{} Excel
+\textbullet{} PowerPoint
+\smallskip
+\subsection{Operating Systems}
+Windows (7, 8, 10) \textbullet{} Linux (Raspbian, Fedora, Centos, Ubuntu)
+\textbullet{} QNX \textbullet{} SunOS (Solaris)
+
+
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+\section{Technologies}
+Arduino \textbullet{} AWS EC2 \textbullet{} Boost C++ \textbullet{} Bitbucket \textbullet{} CLion \textbullet{} CMake \textbullet{} Crucible \textbullet{} Docker \textbullet{} Eclipse \textbullet{} Git \textbullet{} IntelliJ IDEA \textbullet{} Jenkins \textbullet{} OpenCV \textbullet{} PostgreSQL \textbullet{} PyCharm \textbullet {QT} \textbullet{} Raspberry PI \textbullet{} SVN \textbullet{} VirtualBox \textbullet{} Visual Studio
+%\subsection{Undergraduate}
+
+%Operating Systems \\
+%Artificial Intelligence \\
+%Functional Programming \\
+%Algorithms \\
+%Object Oriented Programming\\
+%Software Engineering\\
+
+
+\sectionspace % Some whitespace after the section
+
+
+
+\end{minipage} % The end of the left column
+\hfill
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+
+\section{Experience}
+\runsubsection{Eagleview}
+\descript{| Software Engineer}
+\location{Aug. 2016 - Present | Rochester, NY }
+ % Hacky fix for awkward extra vertical space
+Aerial imagery, data analytics, property data, and GIS solutions. 
+\vspace{\topsep}
+\begin{tightitemize}
+\item Designed and developed an application for extracting and developing raw imagery from an aerial capture system. Built on top of AWS using EC2. 
+\item Maintained a legacy capture platform for producing aerially triangulated imagery while building the next generation software stack. Ported algorithms for developing images built for MFC Windows desktop applications to cross-platform modern C++ libraries.
+\item Implemented a library for writing a custom image format that efficiently displayed tiled imagery at multiple zoom levels. Built an application to create images of that format running inside AWS Lambda.
+\item Utilized Jenkins for continuous integration with Docker for building and deploying applications and libraries. Wrote unit tests using google test with lcov/gcov code coverage tools.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+\runsubsection{Lockheed Martin}
+\descript{| Software Engineering Intern}
+%\sectionspace % Some whitespace after the section
+\location{Jun. 2015 - Aug. 2015 | MST - Syracuse, NY}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item Worked on tracker software for the TPQ53 radar system, implemented features to allow for better range accuracy when tracking projectiles.
+\end{tightitemize}
+\location{Jun. 2014 - Aug. 2014 | MST - Syracuse, NY}
+\begin{tightitemize}
+\item Worked with the Non-Propulsion Electronics team on a ship control system for Seawolf-class submarines. 
+\end{tightitemize}
+Held a United States government security clearance at the Secret level. 
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{GE Aviation}
+\descript{| Software Engineering Co-op}
+
+\location{Aug. 2014 – Dec. 2014 | Grand Rapids, MI}
+\begin{tightitemize}
+\item Worked with the Navigation and Guidance team on software for the Boeing 737, specifically the Flight Management System (FMS).  
+\item Ran confidence and interoperability testing on new releases of the 737 FMS in a lab setting. 
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{R.I.T. Department of Computer Science}
+\descript{\\Teaching Assistant}
+
+\location{Jan. 2016 – Aug. 2016 | Rochester, NY}
+\begin{tightitemize}
+\item Taught recitations on material presented during the week for introductory Computer Science courses.
+\item Held 12 hours of tutoring during the week on all topics covering the first three semesters of the undergraduate degree. 
+\end{tightitemize}
+% new job
+
+\section{Spotlight Project}
+\subsection{\href{https://github.com/acf5118/AutomatedTapingGUI}{Automated Taping Graphical Interface - Java}}
+\location{JavaFX | Arduino}
+\begin{tightitemize}
+\item Collaborated with a colleague at the University of Connecticut to design the software front end for his mechanical engineering senior design project, a custom built, CNC-like, automated taping machine.
+\item Written using JavaFX, the graphical interface interacted via serial communication with an Arduino that controlled the x and y axis motors of an automated machine for applying industrial tape to parts. 
+\item The project won for best senior design among engineers. 
+\end{tightitemize}
+\sectionspace
+\end{minipage}
+\end{document}
+
+% %
+% %
+% removing projects section 4/8/2018
+% %
+% %
+
+\inlinegraphics{c-plus-plus-logo.png} \inlinegraphics{opencv_icon.png} \inlinegraphics{boost.png} \inlinegraphics{qt.png} \inlinegraphics{cmake.jpg} \inlinegraphics{git.jpeg} \inlinegraphics{svn.png} \inlinegraphics{docker.png} \inlinegraphics{amazon.png} \inlinegraphics{postgres.png} \inlinegraphics{itj.jpg} \inlinegraphics{pycharm.jpg} \inlinegraphics{clion.jpg} \inlinegraphics{eclipse.png} \inlinegraphics{vs.png} \inlinegraphics{virtualbox.jpg} \\
+
+\iffalse
+\section{Projects}
+
+\descript{Computer Science Ambassador}
+\location{Jan. 2014 – Present | Rochester, NY }
+\begin{tightitemize}
+\item Gave tours of the department, worked with families and prospective students. Represented the Department of Computer Science as a student. 
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{BLE Location App}
+
+\location{Android, Java Server}
+\begin{tightitemize}
+\item An Android application that uses Bluetooth Low Energy to figure out proximity to a beacon and communicates with a server. Can be expanded for a number of different situations. Written with a self guided museum tour in mind.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+\runsubsection{Beer Recommendation Web Application}
+
+\location{C\#, SQL, Python}
+\begin{tightitemize}
+\item Compiled data using a variety of python scripts to create a beer recommendation system. Uploaded data into MySQL database.
+\end{tightitemize}
+\sectionspace % Some whitespace after the section
+\fi
+%----------------------------------------------------------------------------------------
+\end{minipage} % The end of the right column
+%----------------------------------------------------------------------------------------
+%	SECOND PAGE (EXAMPLE)
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%\section{Example Section}
+
+%\end{minipage} % The end of the left column
+%\hfill
+%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%\section{Example Section 2}
+
+%\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+
