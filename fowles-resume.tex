@@ -41,7 +41,6 @@
 \lastupdated % Print the Last Updated text at the top right
 
 \namesection{Adam}{Fowles}{ % Your name
-%\urlstyle{same}\url{http://adamfowlesprojects.com} \\ % Your website, LinkedIn profile or other web address
 \href{mailto:adamfowles22@gmail.com}{adamfowles22@gmail.com} | 860.416.7468 % Your contact information
 }
 
@@ -61,13 +60,15 @@
 
 \descript{MS in Computer Science}
 \location{May 2017 | Rochester, NY}
+\sectionspace
+Domain: Parallel and Distributed Systems
 
 \sectionspace % Some whitespace after the section
 
 \descript{BS in Computer Science}
-\location{May 2017 | Rochester, NY}
+\location{May 2016 | Rochester, NY}
 \sectionspace % Some whitespace after the section
-Minor in Communication \\
+Minor: Communication \\
 %\location{GPA: 3.7 / 4.0}
 
 \sectionspace % Some whitespace after the section
@@ -76,27 +77,17 @@ Minor in Communication \\
 % Coursework
 %------------------------------------------------
 
-\section{Coursework}
+%\section{Coursework}
 
-\subsection{Graduate}
-Big Data\\
-Data Security and Privacy \\
-Pervasive and Mobile Systems\\
-Computer Networks\\
-Cryptography\\
-Parallel and Distributed Systems
+%\subsection{Graduate}
+%Big Data\\
+%Data Security and Privacy \\
+%Pervasive and Mobile Systems\\
+%Computer Networks\\
+%Cryptography\\
+%Parallel and Distributed Systems
 %------------------------------------------------
 
-%------------------------------------------------
-% Links
-%------------------------------------------------
-
-\section{Links} 
-
-Github:// \href{https://github.com/acf5118}{\bf acf5118} \\
-LinkedIn:// \href{https://www.linkedin.com/in/adamfowles}{\bf adamfowles} \\
-
-\sectionspace % Some whitespace after the section
 %------------------------------------------------
 % Skills
 %------------------------------------------------
@@ -107,20 +98,20 @@ LinkedIn:// \href{https://www.linkedin.com/in/adamfowles}{\bf adamfowles} \\
 \location{Extremely comfortable:}
 C++ \\
 \location{Comfortable:}
-Java \textbullet{} C\# \textbullet{} Python\\
+Go \textbullet{} Python\\
 \location{Familiar:}
-Go
+Java \textbullet{} C\# \textbullet{} Javascript
 \smallskip
 \subsection{Agile}
 JIRA \textbullet{} Confluence
 \smallskip
-\subsection{Business}
-\LaTeX\ \textbullet{} Word \textbullet{} Excel
-\textbullet{} PowerPoint
+\subsection{Architecture}
+AWS Cloudformation \textbullet{} MIRO \textbullet{} UML Diagraming: Sequence, Class
+\textbullet{} \LaTeX\ \textbullet{} Doxygen
 \smallskip
-\subsection{Operating Systems}
-Windows (7, 8, 10) \textbullet{} Linux (Raspbian, Fedora, Centos, Ubuntu)
-\textbullet{} QNX \textbullet{} SunOS (Solaris)
+%\subsection{Operating Systems}
+%Windows (7, 8, 10) \textbullet{} Linux (Raspbian, %Fedora, Centos, Ubuntu)
+%\textbullet{} QNX \textbullet{} SunOS (Solaris)
 
 
 
@@ -128,7 +119,7 @@ Windows (7, 8, 10) \textbullet{} Linux (Raspbian, Fedora, Centos, Ubuntu)
 
 %------------------------------------------------
 \section{Technologies}
-Arduino \textbullet{} AWS EC2 \textbullet{} Boost C++ \textbullet{} Bitbucket \textbullet{} CLion \textbullet{} CMake \textbullet{} Crucible \textbullet{} Docker \textbullet{} Eclipse \textbullet{} Git \textbullet{} IntelliJ IDEA \textbullet{} Jenkins \textbullet{} OpenCV \textbullet{} PostgreSQL \textbullet{} PyCharm \textbullet {QT} \textbullet{} Raspberry PI \textbullet{} SVN \textbullet{} VirtualBox \textbullet{} Visual Studio
+Artifactory \textbullet{} AWS: DynamoDB, ECS, EC2, Lambda, SQS, SNS \textbullet{} Boost C++ \textbullet{} CMake \textbullet{} Curl \textbullet{} Docker \textbullet{} Git \textbullet{} Jenkins \textbullet{} Mapbox \textbullet{} OpenCV \textbullet{} React \textbullet{} Rollbar \textbullet{} RPM \textbullet{} Vim
 %\subsection{Undergraduate}
 
 %Operating Systems \\
@@ -141,6 +132,16 @@ Arduino \textbullet{} AWS EC2 \textbullet{} Boost C++ \textbullet{} Bitbucket \t
 
 \sectionspace % Some whitespace after the section
 
+%------------------------------------------------
+% Links
+%------------------------------------------------
+
+\section{Links} 
+
+Github:// \href{https://github.com/afowles}{\bf afowles} \\
+LinkedIn:// \href{https://www.linkedin.com/in/adamfowles}{\bf adamfowles} \\
+
+%\sectionspace % Some whitespace after the section
 
 
 \end{minipage} % The end of the left column
@@ -158,16 +159,30 @@ Arduino \textbullet{} AWS EC2 \textbullet{} Boost C++ \textbullet{} Bitbucket \t
 
 \section{Experience}
 \runsubsection{Eagleview}
-\descript{| Software Engineer}
-\location{Aug. 2016 - Present | Rochester, NY }
+\descript{| Senior Specialist Engineer}
+\location{Jan. 2019 - Present | Rochester, NY }
  % Hacky fix for awkward extra vertical space
 Aerial imagery, data analytics, property data, and GIS solutions. 
 \vspace{\topsep}
 \begin{tightitemize}
-\item Designed and developed an application for extracting and developing raw imagery from an aerial capture system. Built on top of AWS using EC2. 
-\item Maintained a legacy capture platform for producing aerially triangulated imagery while building the next generation software stack. Ported algorithms for developing images built for MFC Windows desktop applications to cross-platform modern C++ libraries.
-\item Implemented a library for writing a custom image format that efficiently displayed tiled imagery at multiple zoom levels. Built an application to create images of that format running inside AWS Lambda.
+\item Integrating an image factory on track to produce over 200 million images in 2020 with a warehouse for storing imagery using Go microservices built on top of AWS including DynamoDB, ECS, Lambda, SQS, and SNS.
+\item Governing an image factory codebase of 100K+ lines of modern C++ (17/20, GCC 10+) including application and library code built on the latest Fedora operating systems. Managing complex code dependencies and build systems utilizing Docker, Artifactory, and Jenkins.
+\item Architecting services across verticals in a global engineering organization. Collaborating with teams in Bengaluru, Perth, and Bellevue.
+\end{tightitemize}
+\location{Apr. 2019 - Jan. 2020 | Specialist Engineer }
+\begin{tightitemize}
+\item Designed and developed scalable applications for extracting and developing raw imagery from an aerial capture system. Built on top of AWS using EC2. 
 \item Utilized Jenkins for continuous integration with Docker for building and deploying applications and libraries. Wrote unit tests using google test with lcov/gcov code coverage tools.
+\end{tightitemize}
+\location{Apr. 2019 - Apr. 2019 | Software Engineer II }
+\begin{tightitemize}
+\item Supported an image processing R\&D team on scaling and building cloud-based solutions for new aerial image pipelines.
+\item Implemented a library for writing a custom image format that efficiently displayed tiled imagery at multiple resolution levels.
+\end{tightitemize}
+\location{Aug. 2016 - Apr. 2018 | Software Engineer }
+\begin{tightitemize}
+\item Maintained a legacy capture platform for producing aerially triangulated imagery while building next generation software solutions.
+\item Ported algorithms for developing and demosaicing imagery from MFC C++ desktop applications to cross-platform modern C++ libraries. 
 \end{tightitemize}
 
 \sectionspace % Some whitespace after the section
@@ -209,7 +224,14 @@ Held a United States government security clearance at the Secret level.
 \item Taught recitations on material presented during the week for introductory Computer Science courses.
 \item Held 12 hours of tutoring during the week on all topics covering the first three semesters of the undergraduate degree. 
 \end{tightitemize}
-% new job
+\end{minipage}
+\end{document}
+
+% %
+% %
+% removing projects section 4/8/2018
+% %
+% %
 
 \section{Spotlight Project}
 \subsection{\href{https://github.com/acf5118/AutomatedTapingGUI}{Automated Taping Graphical Interface - Java}}
@@ -220,14 +242,6 @@ Held a United States government security clearance at the Secret level.
 \item The project won for best senior design among engineers. 
 \end{tightitemize}
 \sectionspace
-\end{minipage}
-\end{document}
-
-% %
-% %
-% removing projects section 4/8/2018
-% %
-% %
 
 \inlinegraphics{c-plus-plus-logo.png} \inlinegraphics{opencv_icon.png} \inlinegraphics{boost.png} \inlinegraphics{qt.png} \inlinegraphics{cmake.jpg} \inlinegraphics{git.jpeg} \inlinegraphics{svn.png} \inlinegraphics{docker.png} \inlinegraphics{amazon.png} \inlinegraphics{postgres.png} \inlinegraphics{itj.jpg} \inlinegraphics{pycharm.jpg} \inlinegraphics{clion.jpg} \inlinegraphics{eclipse.png} \inlinegraphics{vs.png} \inlinegraphics{virtualbox.jpg} \\
 
